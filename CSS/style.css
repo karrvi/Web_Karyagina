@@ -1,0 +1,685 @@
+* {
+margin:0;
+padding:0;
+}
+
+aside, footer, section {
+display:block;
+}
+
+img, iframe, video, embed {
+max-width:100%!important;
+}
+
+/* Типографика: заголовки, оформление текста */
+#header span {
+    display: block;
+    font-size: 2.5em;
+    font-family: 'Roboto';
+    color: white;
+    text-align: center;
+    margin-top: 4em;
+}
+
+
+h1 {
+    font-size: 4.688em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 0.5em;
+}
+
+h2 {
+    font: bold 40px 'PT Sans Narrow';
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2.500em;
+    font-family: sans-serif;
+    color: black;
+}
+
+h3{
+    padding: 0.5em 0em 0.5em 0em;
+    color: black;
+    font: bold 1.125em 'PT Sans Narrow';
+   
+}
+
+#facts .box3 {
+    width: 31%;
+    padding: 0% 1% 0% 1%;
+    text-align: center;
+    font: 'PT Sans Narrow';   
+}
+
+#facts .box3 span {
+    color: #656565; 
+    font-size: 0.938em;
+}
+
+#facts .box3 img {
+    width: 100px;
+    height: 100px;
+}
+
+#facts {
+    padding-bottom: 6.875em;
+    background-color: #F6F6F6;
+}
+
+.box_facts {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.fact {
+    display: block;
+    text-align: center;
+    color: #656565;
+    font-style: italic;
+    font-size: 1em;
+    font-family: sans-serif;
+    padding-top: 0.313em; 
+    padding-bottom: 3.500em;
+}
+
+#learnmore {
+    display: block;
+    width: 240px;
+    text-align: center;
+    margin: 3.2em auto 8.3em auto;
+    background-color: #C38B4D;
+    font: bold 1.125em 'PT Sans Narrow';
+    font-family: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 3px;
+}
+
+#learnmore:hover {
+    background: darkorange;
+}
+
+li a:hover {
+    color: #fed136;
+}
+
+
+
+/* Макет: Layout */
+#page {
+    width: 100%;
+    font: 100% 'PT Sans Narrow';
+    font-family: sans-serif;
+}
+
+#header {
+    width: 100%;
+    background-image: url(../images/hlebnikov.jpg);
+    background-position: center;
+}
+
+.layout {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.layout1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-left {
+    justify-content: flex-start;
+}
+
+.header-right menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.clr {
+    clear: both;
+}
+
+.logo {
+    margin-top: 20px;
+    justify-content: flex-start;
+    margin-left: 200px;
+}
+
+menu {
+    /* width: 55%; */
+    float: right;
+    margin-top: 2em;
+}
+
+menu li {
+    float: left;
+    margin: 0 25px 0 0;
+    list-style-type: none;
+}
+
+menu li a {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#references {
+    background-color: #F6F6F6;
+    padding-bottom: 6.875em;
+}
+
+.layout3 {
+    margin: 0 auto;
+    width: 940px;   
+    overflow: hidden;
+}
+
+#references .box3 {
+    margin: 0px 3.51% 3.125em 0px;
+    padding: 0px;
+    padding-bottom: 1.125em;
+    background-color: white;
+}
+
+
+.references_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#references .last {
+   margin-right: 0px;
+}
+
+#references h3 {
+    padding: 0.5em 0px 0px 0px;
+    text-align: center;
+}
+
+.ref {
+    font: italic 0.938em 'PT Sans Narrow';
+    font-family: sans-serif;
+    color: #656565;
+    display: block;
+    text-align: center;
+}
+
+#references .box3 a {
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+    height: 301px;
+}
+
+#references .box3 img {
+    transition: 0.2s linear; 
+    margin: 0px;
+} 
+
+#references .box3 div {
+    width: auto;
+    height: 301px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: 0.4s linear;
+    opacity: 0;
+    transform: rotate(6deg);
+}
+
+#references .box3 div span {
+    display: block;
+    width: 60%;
+    margin: 50% auto;
+    text-align: center;
+    padding: 0.5em 10px 0.5em 10px;
+    font: bold 1em 'PT Sans Narrow';
+    color: #C38B4D;
+    border: 2px solid #C38B4D;
+    text-transform: uppercase;
+}
+
+#references a:hover img {
+    margin-top: -20px;
+}
+
+#references a:hover div {
+    bottom: 301px;
+    opacity: 1;
+    transform: rotate(0);
+}
+
+#about {
+    background-color: #FFFFFF;
+    padding-bottom: 6.875em;
+}
+
+.layout4 {
+        width: 940px;
+    }
+
+.border {
+    width: 50%;
+    border-right: 3px solid #f2f2f2;
+}
+
+.level {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5.313em;
+}
+
+.level h3 {
+    text-transform: uppercase;
+}
+
+.level h4 {
+    color: #1f1f1f;
+    font: bold 1.125em 'PT Sans Narrow';
+}
+
+.level p {
+    color: #787878;
+    font: 100% 'PT Sans Narrow';
+}
+
+.level img {
+    display: block;
+    border: 5px solid #f1f1f1;
+    border-radius: 184px;
+}
+
+.level:nth-child(odd) {
+    text-align: right;
+    left: 19.57%;
+}
+
+.level:nth-child(odd) img {
+    float: right;
+    margin-left: 2.125em;
+}
+
+.level:nth-child(even) {
+    text-align: left;
+    left: 80.43%;
+}
+
+.level:nth-child(even) img {
+    float: left;
+    margin-right: 2.125em;
+}
+
+.level a img:hover {
+    border: 5px solid #fed136; 
+}
+
+#team {
+     background-color: white;
+     padding-bottom: 2.875em;
+}
+
+#team .box3 {
+    width: 31%;
+    float: left;
+    padding: 0% 1% 0% 1%;
+    text-align: center;
+}
+
+#team h3 {
+    padding: 0.5em 0 0 0;
+}
+
+#team p {
+    font: normal 0.938em 'PT Sans Narrow';
+    font-family: sans-serif;
+    color: #656565;
+    padding-top: 0em;
+}
+
+#team .box3 img {
+    border: 6px solid white;
+    border-radius: 184px;
+}
+
+#team p.quote {
+    font: 1em 'PT Sans Narrow';
+    font-family: sans-serif;
+    color: #656565;
+    padding-top: 3.5em;
+    text-align: center;
+}
+
+.layout5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.layout6 {
+    width: 940px;
+}
+
+#map .layout {
+    width: 100%;  
+}
+
+.box2 input, .box2 textarea {
+    width: 92%;
+    background: #fff;
+    border-style: none;
+    padding: 1em 4% 1em 4%;
+    font: 1em 'PT Sans Narrow';
+    font-family: sans-serif;
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.box2 textarea {
+    height: 9.750em;
+    resize: none;
+}
+
+.layout8 {
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;    
+}
+
+button:hover {
+    background: darkorange;
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+footer {
+    width: 100%;
+    padding: 1.5em 0 1.5em 0;
+    text-align: center;
+}
+
+footer p {
+    font: bold 14px 'PT Sans Narrow';
+    font-family: sans-serif;
+    color: #717C81;
+    text-align: center;
+}
+
+#toTop {
+    width: 100px;
+    border: 1px solid #ccc;
+    background: rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 0.5em 15px;
+    position: fixed;
+    bottom: 2em;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+    font-size: 1em;
+}
+
+#toTop:hover{
+    background: rgba(0,0,0,0.9);
+}
+
+.layout8 {
+    width: 940px;
+}
+
+@media screen and (max-width: 600px) and (orientation:portrait) { 
+    
+    body, html {
+        width: 100%;
+    }
+
+    .layout { width: 100%; }       
+   
+    /* Сдвигаем логотип на 30px влево */
+    /*#header img{ margin-left: 30px; }*/    
+    
+    /* У меню убираем обтекание, меняем внешние отступы на 0 25px 0 0, делаем выравнивание текста по правому краю, меняем внутренний отступ снизу на 10px, меняем размер шрифта на 14px */
+    menu li {
+        display: none;
+    }
+    
+    menu {
+        content: "=";
+        color: white;
+    }
+
+    /* Меняем размер шрифта "Добро пожаловать в нашу студию!" на 32px, меняем внешний отступ сверху */
+    #header span {
+        font-size: 32px;
+        margin-top: 1em;
+    }
+    
+    /* У заголовка h1 меняем размер шрифта на 65px, меняем внешний отступ cверху на на 50px */
+    #header h1 {
+        font-size: 65px;
+        margin-top: 50px;
+    }
+  
+    /* У ссылки Узнать больше меняем размер шрифта на 1.125em, меняем внешний отступ сверху на 50px, меняем внешний отступ снизу на 4em, меняем внутренний отступ снизу на 1em, меняем ширину на 200px */
+    #learnmore {
+        font-size: 1.125em;
+        margin-top: 50px;
+        margin-bottom: 4em;
+        padding-bottom: 1em;
+        width: 200px;
+    }
+    
+    /* У блоков box3 в Услугах убираем обтекание, делаем выравнивание текста по середине, меняем ширину на 80%, меняем внешний отступ слева на 33px, меняем внешний отступ сверху на 30px */
+    .box_facts .box3 {
+        width: 70%;
+    }
+    
+    .box_facts {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;   
+}
+
+#facts .box3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#references .box3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+    /* У заголовка h2 в блоке Услуги меняем внешний отступ сверху на 60px */
+    #facts h2 { margin-top: 60px; }
+    
+    /* У подзаголовка в блоке Услуги меняем внутренний отступ снизу на 8px */
+    #facts .fact { padding-bottom: 8px; }
+    
+    /* Меняем внутренний отступ снизу блока Услуги на 60px */
+    #facts { padding-bottom: 60px; }
+   
+    /* У заголовка h2 в блоке Портфолио меняем внешний отступ сверху на 60px */
+    #references h2 { margin-top: 60px; }
+    
+    /* У блоков box3 в Портфолио меняем внешний отступ слева на 33px */
+    #references .box3 { margin-left: 33px; }
+    
+    /* У подзаголовка в блоке Портфолио меняем внешний отступ снизу на 30px */
+    #references .fact { margin-bottom: 30px; }
+    
+    /* Меняем внутренний отступ снизу блока Портфолио на 20px */
+    #references { padding-bottom: 20px; }
+    
+    #references span { padding-bottom: 16px; }
+
+    .references_box { flex-direction: column; }
+
+    .layout3 { width: 100%; }
+
+    #about {
+        display: none;
+    }
+
+    .layout6, .layout7 {
+    width: 100%;
+}
+
+.layout5 .box3 { 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.layout5 {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.layout8, .layout9 {
+    width: 100%;
+}
+
+.layout8 {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+}
+
+
+@media screen and (max-width: 930px){ 
+
+    body, html {
+        width: 100%;
+    }
+
+
+    #facts .box3 {
+        width: 90%;
+    }
+
+    menu li {
+        display: none;
+    }
+
+    .box_facts {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;   
+}
+
+    /* У заголовка h2 в блоке Портфолио меняем внешний отступ сверху на 60px */
+    #references h2 { margin-top: 60px; }
+    
+    /* У блоков box3 в Портфолио меняем внешний отступ слева на 33px */
+    #references .box3 { margin: 0 auto; }
+    
+    /* У подзаголовка в блоке Портфолио меняем внешний отступ снизу на 30px */
+    #references .fact { margin-bottom: 30px; }
+    
+    /* Меняем внутренний отступ снизу блока Портфолио на 20px */
+    #references { padding-bottom: 20px; }
+    
+    #references span { padding-bottom: 16px; }
+
+    .references_box {
+    flex-direction: column;
+}
+
+.layout3 {
+    width: 100%;   
+}
+
+#about {
+        display: none;
+    }
+
+.layout6, .layout7 {
+    width: 100%;
+}
+
+
+.layout5 {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.layout5 .box3 { 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.layout8, .layout9 {
+    width: 100%;
+}
+
+#facts .box3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#references .box3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.layout8 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 26%;
+
+}
+
+.layout9 {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -25px;
+}
+
+
+.layout9 .box3:nth-child(1) {
+    margin-left: 0px;
+}
+
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <meta name="description" content="...">
+    <meta name="keywords" content="...">
+    <title>Гзи думы о Велимире</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("a.topLink").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top + "px"
+        }, {
+            duration: 500
+        });
+        return false;
+    });
+});
+</script>
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else {
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
+</script>
+
+</head>
+<body id="page">
+    <section id="header">
+        <div class="layout">
+            <div class="layout1">
+            <div class="header-left">
+            <a href="#" title="Логотип ИТМО"><img src="images/itmo.png" class="logo" alt=""></a></div>
+            <div class="header-right">
+            <menu>
+                <li><a href="#header" class="topLink">Начало</a></li>
+                <li><a href="#facts" class="topLink">Факты о Велимире</a></li>
+                <li><a href="#about" class="topLink">Обо мне и проекте</a></li>
+                <li><a href="#references" class="topLink">Референсы</a></li>               
+                <li><a href="#team" class="topLink">Мы</a></li>
+            </menu>
+            </div>
+            </div>
+            <div class="clr"></div>
+            <span>Цифровая выставка</span>
+            <h1>Гзи думы<br>о Велимире</h1>
+            <a href="#facts" id="learnmore" class="topLink">Узнать больше</a>
+        </div>
+    </section>
+     
+    <section id="facts">
+     <div class="layout">
+         <h2>Факты о Велимире</h2>
+         <span class="fact">Надеюсь, вы не знали...</span>
+         <div class="box_facts">
+         <div class="box3">
+             <img src="images/1.png" alt="bird1">
+             <h3>Модник</h3>
+              <span>Однажды на маскараде он нарядился римским патрицием, и в таком виде его арестовала полиция, когда он гулял по городу.</span>
+         </div>
+         <div class="box3">
+             <img src="images/2.png" alt="bird2">
+             <h3>317</h3>
+             <span>Число 317 Хлебников считал важнейшим в истории, связанным со скоростью света и скоростями земли.</span>
+        </div>
+         <div class="box3">
+             <img src="images/3.png" alt="bird3">
+             <h3>Хаджи-Тархан</h3>
+            <span>Велимир Хлебников неразрывно связан с «Небом Лебедии» — так лирически поэт-будетлянин именовал Астраханский край.</span>
+        </div>
+        </div>
+    </div> 
+    </section>    
+ 
+    
+    <section id="about">
+        <div class="layout layout4">
+            <h2>Обо мне и проекте</h2>
+            <span class="fact">Кто мы такие</span>
+            <div class="border">
+                <div class="level">
+                    <img src="images/me.png" alt="about-01">
+                    <h3>Кто я</h3>
+                    <h4>Я - Вика Карягина</h4>
+                    <p>Я специалист по экономической безопасности. И я решила сделать выставку о Велимире Хлебникове, потому что у меня есть вопросы.</p>
+                </div>
+                 <div class="level">
+                    <img src="images/velimir1.png" alt="about-02">
+                    <h3>Почему</h3>
+                    <h4>Мои вопросы</h4>
+                    <p>Кто такой Велимир Хлебников? Как его вижу я? Каким он бывает и может быть в выставочном пространстве как творец? Каково его взаимодействие с текстом? А с наблюдателем?</p>
+                </div>
+                 <div class="level">
+                    <img src="images/velimir2.png" alt="about-03">
+                    <h3>О чём</h3>
+                    <h4>Первые мысли</h4>
+                    <p>Основная идея — выставка с применением цифровых инструментов. Объект — Велимир Хлебников как творец и его взаимодействие с текстом и наблюдателем.</p>
+                </div>
+                 <div class="level">
+                    <img src="images/velimir3.png" alt="about-04">
+                    <h3>Как</h3>
+                    <h4>Процесс</h4>
+                    <p>Вика будет думать о Велимире. Жить им. Пытаться проникнуть внутрь себя и Велимира. Перестраивает свой мир в велимироцентричный.</p>
+                </div>
+            </div>
+           </div> 
+       </section>  
+
+
+ <section id="references">
+     <div class="layout3">
+         <h2>Референсы</h2>
+         <span class="fact">Чем я вдохновляюсь?</span>
+        <div class="references_box">
+         <div class="box3">
+             <a href="https://www.erarta.com/ru/calendar/exhibitions/detail/1e8b4e7c-c428-11e5-b7ad-8920284aa333/" target="_blank">
+             <img src="images/erarta.png" alt="reference1">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>«ПтиЦЫ и ЦЫфры»</h3>
+             <span class="ref">Эрарта</span>
+         </div>
+          <div class="box3">
+             <a href="https://pro-peredelkino.org/exhibition-umn" target="_blank">
+             <img src="images/peredelkino.png" alt="reference2">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Условия Материальной независимости</h3>
+             <span class="ref">Переделкино</span>
+         </div>
+          <div class="box3 last">
+             <a href="https://www.afisha.ru/exhibition/260640/" target="_blank">
+             <img src="images/erika.png" alt="reference3">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Эрика берет четыре копии</h3>
+             <span class="ref">Музей Анны Ахматовой</span>
+         </div>
+          <div class="box3">
+             <a href="https://balabanov.live/" target="_blank">
+             <img src="images/balabanov.png" alt="reference4">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Балабанов</h3>
+             <span class="ref">Севкабель</span>
+         </div>
+          <div class="box3">
+             <a href="https://peterburg.center/event/vystavka-petropolis-velikoe-posolstvo-ot-goroda-k-miru.html" target="_blank">
+             <img src="images/petr.png" alt="reference5">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Петрополис</h3>
+              <span class="ref">Петропавловская крепость</span>
+         </div>
+          <div class="box3 last">
+             <a href="https://arterritory.com/ru/on_site/otkrytija/21884-otkuda_berutsja_stihi_otkrytie_multimediinoi_vystavki_orbity/" target="_blank">
+             <img src="images/orbita.png" alt="reference6">
+             <div><span>Посмотреть</span></div>
+             </a>
+             <h3>Откуда берутся стихи?</h3>
+              <span class="ref">Arterritory</span>
+         </div>
+        </div> 
+        </div>
+    </section>   
+    
+    <section id="team">
+         <div class="layout">
+             <h2>Мы</h2>
+             <span class="fact">Команда проекта</span>
+             <div class="layout5">
+             <div class="box3">
+                 <img src="images/vika.png">
+                 <h3>Вика Карягина</h3>
+                 <p>Гзидумец</p> 
+                 <p>tg: @karrvi</p>
+             </div>
+              <div class="box3">
+                  <img src="images/polina.png">
+                  <h3>Полина Колозариди</h3>
+                  <p>Научный руководитель</p>
+                  <p>tg: @kolozaridi</p>
+             </div>
+            </div>
+             <div class="clr"></div>
+             <p class="quote">Землетрясение, пожар, крушение в течение суток будут печатаны на книгах Радио...<br>Вся страна будет покрыта станами Радио...
+        </div> 
+    </section>    
+      
+    <section id="map">
+      <div class="layout layout7">
+            <h2>Планируемое место проведения выставки</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.3116325296655!2d30.335844316070094!3d59.92697098187199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a96dbbdf93%3A0xd290846f1f2d829!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQmNCi0JzQng!5e0!3m2!1sru!2sru!4v1674312747146!5m2!1sru!2sru" width="100%" height="450" style="border:0; margin-top: 50px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div> 
+    </section>
+      
+    <footer>
+      <div class="layout">
+        <div class="layout9">
+          <div class="box3"><p>&copy; Виктория Карягина</p></div>          
+        </div>
+        </div> 
+    </footer>
+    <div id="toTop">^ Наверх</div>
